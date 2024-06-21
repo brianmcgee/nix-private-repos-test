@@ -1,5 +1,4 @@
 final: prev: {
-
   # A quick way of validating the secret repo was included correctly by looking for a well-known value in a well-known
   # file.
   mkTest =

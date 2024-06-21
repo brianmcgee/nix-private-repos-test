@@ -31,12 +31,11 @@
         "narHash": "sha256-Jn9L67B3HviV4Rjz/ThEwJxSqV6d5YPmt3pS/rERba8=",
         "ref": "refs/heads/main",
         "rev": "ca1572691af5f100f73ec463566b8feab0b843a4",
-        "shallow": true,
+        "revCount": 3,
         "type": "git",
         "url": "ssh://git@github.com/brianmcgee/secret.git"
       },
       "original": {
-        "shallow": true,
         "type": "git",
         "url": "ssh://git@github.com/brianmcgee/secret.git"
       }

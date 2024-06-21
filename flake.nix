@@ -11,7 +11,7 @@
 
     # let's pull in a private repo in different ways
 
-    git.url = "git+ssh://git@github.com/brianmcgee/secret.git?shallow=1";
+    git.url = "git+ssh://git@github.com/brianmcgee/secret.git";
     http.url = "github:brianmcgee/secret";
   };
 
