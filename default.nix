@@ -1,6 +1,6 @@
 rec {
   inputs = {
-    git = fetchGit {
+    ssh = fetchGit {
       url = "git@github.com:brianmcgee/secret.git";
       ref = "main";
     };
@@ -18,7 +18,7 @@ rec {
     in
     lib.genAttrs
       [
-        "git"
+        "ssh"
         "http"
       ]
       (
