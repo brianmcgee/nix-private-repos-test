@@ -13,7 +13,7 @@
 
     git.url = "git+ssh://git@github.com/brianmcgee/secret.git?shallow=1";
     http.url = "github:brianmcgee/secret";
-  };rm re
+  };
 
   # Keep the magic invocations to minimum.
   outputs =
