@@ -7,5 +7,5 @@
 }:
 lib.mkTest {
   inherit pkgs pname;
-  input = inputs.git;
+  input = inputs.${pname};
 }

@@ -22,9 +22,27 @@
         "type": "github"
       }
     },
-    "git": {
+    "git_http": {
       "inputs": {
         "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1718964402,
+        "narHash": "sha256-Jn9L67B3HviV4Rjz/ThEwJxSqV6d5YPmt3pS/rERba8=",
+        "owner": "brianmcgee",
+        "repo": "secret",
+        "rev": "ca1572691af5f100f73ec463566b8feab0b843a4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brianmcgee",
+        "repo": "secret",
+        "type": "github"
+      }
+    },
+    "git_ssh": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1718964402,
@@ -40,31 +58,13 @@
         "url": "ssh://git@github.com/brianmcgee/secret.git"
       }
     },
-    "http": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_2"
-      },
-      "locked": {
-        "lastModified": 1718964402,
-        "narHash": "sha256-Jn9L67B3HviV4Rjz/ThEwJxSqV6d5YPmt3pS/rERba8=",
-        "owner": "brianmcgee",
-        "repo": "secret",
-        "rev": "ca1572691af5f100f73ec463566b8feab0b843a4",
-        "type": "github"
-      },
-      "original": {
-        "owner": "brianmcgee",
-        "repo": "secret",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1718714799,
-        "narHash": "sha256-FUZpz9rg3gL8NVPKbqU8ei1VkPLsTIfAJ2fdAf5qjak=",
+        "lastModified": 1718895438,
+        "narHash": "sha256-k3JqJrkdoYwE3fHE6xGDY676AYmyh4U2Zw+0Bwe5DLU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c00d587b1a1afbf200b1d8f0b0e4ba9deb1c7f0e",
+        "rev": "d603719ec6e294f034936c0d0dc06f689d91b6c3",
         "type": "github"
       },
       "original": {
@@ -76,11 +76,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1718714799,
-        "narHash": "sha256-FUZpz9rg3gL8NVPKbqU8ei1VkPLsTIfAJ2fdAf5qjak=",
+        "lastModified": 1718895438,
+        "narHash": "sha256-k3JqJrkdoYwE3fHE6xGDY676AYmyh4U2Zw+0Bwe5DLU=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c00d587b1a1afbf200b1d8f0b0e4ba9deb1c7f0e",
+        "rev": "d603719ec6e294f034936c0d0dc06f689d91b6c3",
         "type": "github"
       },
       "original": {
@@ -106,12 +106,29 @@
         "type": "github"
       }
     },
+    "nixpkgs_4": {
+      "locked": {
+        "lastModified": 1718895438,
+        "narHash": "sha256-k3JqJrkdoYwE3fHE6xGDY676AYmyh4U2Zw+0Bwe5DLU=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "d603719ec6e294f034936c0d0dc06f689d91b6c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "blueprint": "blueprint",
-        "git": "git",
-        "http": "http",
-        "nixpkgs": "nixpkgs_3"
+        "git_http": "git_http",
+        "git_ssh": "git_ssh",
+        "nixpkgs": "nixpkgs_3",
+        "tarball": "tarball"
       }
     },
     "systems": {
@@ -127,6 +144,21 @@
         "owner": "nix-systems",
         "repo": "default",
         "type": "github"
+      }
+    },
+    "tarball": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_4"
+      },
+      "locked": {
+        "lastModified": 1718964402,
+        "narHash": "sha256-Jn9L67B3HviV4Rjz/ThEwJxSqV6d5YPmt3pS/rERba8=",
+        "type": "tarball",
+        "url": "https://github.com/brianmcgee/secret/archive/main.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/brianmcgee/secret/archive/main.tar.gz"
       }
     }
   },

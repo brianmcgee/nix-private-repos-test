@@ -11,8 +11,9 @@
 
     # let's pull in a private repo in different ways
 
-    git.url = "git+ssh://git@github.com/brianmcgee/secret.git";
-    http.url = "github:brianmcgee/secret";
+    git_ssh.url = "git+ssh://git@github.com/brianmcgee/secret.git";
+    git_http.url = "github:brianmcgee/secret";
+    tarball.url = "https://github.com/brianmcgee/secret/archive/main.tar.gz";
   };
 
   # Keep the magic invocations to minimum.
