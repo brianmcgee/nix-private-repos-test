@@ -10,7 +10,7 @@ final: prev: {
     pkgs.runCommandLocal pname { } ''
       set -euo pipefail
 
-      path="${input}/hello.text"
+      path="${input}/hello.txt"
       expected="world"
       actual=$(cat ${input}/hello.txt)
 
@@ -18,6 +18,8 @@ final: prev: {
           echo "failure: expected '$expected', found '$actual' in $path"
           exit 1
       fi
-      touch $out
+
+      mkdir -p "$out/${pname}"
+      cp $path "$out/${pname}/"
     '';
 }
